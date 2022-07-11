@@ -1,0 +1,5 @@
+[requires]
+boost/[>=0.1.4+1.70.0]@tomtom/master
+[generators]
+cmake
+cmake_find_package

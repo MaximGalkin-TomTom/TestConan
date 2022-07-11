@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.0)
+project(boost_header_test)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_BINARY_DIR}")
+include(conanbuildinfo)
+conan_basic_setup()
+find_package(Boost REQUIRED)
+add_executable(main main.cpp)
+target_link_libraries(main PRIVATE Boost::headers)
